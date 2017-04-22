@@ -22,7 +22,7 @@
       }
     },
     "versionFirst": "3.12.1",
-    "uniqCompNum": 7,
+    "uniqCompNum": 12,
     "versionPublish": "3.12.1",
     "favicon": "@PROJECT_PATH@/assets/images/favicon-128x128.png",
     "noImageResize": ""
@@ -126,7 +126,7 @@
             }
           },
           "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Brent Passmore</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">OVERVIEW</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\">FEATURES</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Mobile friendly</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Based on Bootstrap</a><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\">Trendy blocks</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Image/content slider</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Contact forms</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Image gallery</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Mobile menu</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Google maps</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Social buttons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Google fonts</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Video background</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Host anywhere</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\">HELP</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\">Forum</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Tutorials</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Contact us</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"about.html\">ABOUT</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
           "_tags": [
@@ -160,6 +160,173 @@
         {
           "_name": "footer1",
           "_anchor": "footer1-2",
+          "_params": {
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#323232",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 Brent Passmore."
+        }
+      ]
+    },
+    "about.html": {
+      "settings": {
+        "title": "About Brent",
+        "meta_descr": "About Brent"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#ffffff"
+            },
+            ".link, .dropdown-item": {
+              "color": "#ffffff"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#0e0e0e"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#202020!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#282828"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#ffffff",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-7",
+          "_params": {
+            "bgColor": "#282828",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#ffffff",
+            "fontHoverColor": "@primaryColor",
+            "transparent": true,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/bp-128x128.png",
+              "height": 128,
+              "alt": "Je suis Brent",
+              "link": "index.html",
+              "title": "Je suis Brent",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "linkInNewWindow": false,
+              "name": "user",
+              "family": "MobiriseIcons",
+              "link": "index.html",
+              "size": 0,
+              "newWindow": false,
+              "active": true
+            }
+          },
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Brent Passmore</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"about.html\">ABOUT</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#fff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box8",
+          "_anchor": "msg-box8-a",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "parallax": true,
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/littlerock-copy-2000x1333.jpg",
+            "bgColor": "#F2F2F2",
+            "bgColorRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": true,
+            "showButton": false
+          },
+          "title": "ABOUT BRENT",
+          "text": "<p>The guy you need to know when you need to know a guy.</p>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-b",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<h2><br></h2><h2>Pleased to meet you. </h2><h2>Hope you guess my name.</h2><p><br></p><p>I am the founder of Lit—a small design studio made up of friends and former colleagues who simply want to do less wrong.</p><p><br></p><p>I recently started working at the University of Arkansas for Medical Sciences as web manager. In this role, I am responsible for all web properties at the university.</p><p><br></p><p>I also served as the Communications Director at the Arkansas Education Association. My main focus was to pull together big picture strategies in an effort to create continuity throughout the organization. During my time with the organization, I:</p><p><br></p><ul><li>developed a cohesive communication strategy on behalf of AEA</li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">crafted all messages and images that addressed key initiatives to audiences via print, web and social media</span></li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">managed grants related to enhanced communication efforts for AEA</span></li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">worked with AEA president to achieve media coverage for key events and programs</span></li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">created new web and print content to provide enhanced offerings for underserved members of the organization</span></li></ul><p><br></p><p>Prior to this, I served as Director of Communication Services at Eastern New Mexico University. During my time there, I:</p><p><br></p><ul><li>implemented a social media strategy for the university</li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">organized and helped launch a branding and licensing program</span></li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">coordinated efforts for a website redesign</span></li><li><span style=\"font-size: 1.07rem; line-height: 1.5;\">knocked down silos</span></li></ul><p><br></p><blockquote><p><br></p><p>Random Fact #1</p></blockquote><blockquote><p>I quote music lyrics way too often.</p><p><br></p></blockquote><p><br></p><p>For thirteen years, I worked as the Director of Web Development at the University of Central Arkansas. As director, I coordinated the overall web and new media presence at UCA. I also worked with various departments on campus to develop promotional websites that advanced the university’s mission to both internal and external audiences.</p><p><br></p><p>Involved with the implementation of the university’s “Graphic Identity Style Guide”, I was also part of the “Branding Team”.</p><p><br></p><p>As a former member of the District IV Board of Directors for CASE (Council for the Advancement and Support of Education), I am continually working to create synergy with all advancement efforts on campus and within the community. I believe all advancement areas are capable of creating a holistic environment to support students throughout their tenure at the university – and beyond.</p><p><br></p><p>I graduated from the University of Central Arkansas with a degree in Mass Communications. Most recently, I obtained my master’s degree from Webster University in Communications Management.</p><p><br></p><blockquote><p><br></p><p>Random Fact #2</p></blockquote><blockquote><p>I won the county spelling bee in 6th grade.</p><p><br></p></blockquote><p><br></p><p>I am an TWELVE time CASE Stellar Speaker award winner and Faculty Star.</p><p><br></p><p>CASE district faculty stars are conference speakers who earn average combined scores of 4.5 and above (on a five-point scale) on their session evaluations at CASE district conferences. Participants rate speakers on criteria that include knowledge of subject matter, suitability of content, presentation skills and quality of handouts.</p><p><br></p><p>CASE stands for The “Council for Advancement and Support of Education” and is a professional association serving educational institutions and the advancement professionals who work on their behalf in alumni relations, communications, development, marketing and allied areas.</p><p><br></p><p>I am also a two time CASE Circle of Excellence award winner for my work on the district IV conference communications and marketing. This is a national award from the Council for Advancement and Support of Education and “acknowledges superior accomplishments that have lasting impact, demonstrate the highest level of professionalism and deliver exceptional results.” According to its website, “The Circle of Excellence celebrates programs that measure up to high standards, contribute to a growing body of knowledge and add substance and insight to the profession and its practitioners.”</p><p><br></p><blockquote><p><br></p><p>Random Fact #3</p></blockquote><blockquote><p>My life philosophy is “do less wrong”.</p><p><br></p></blockquote>",
+          "_styles": {
+            "H2": {
+              "text-align": "center"
+            }
+          }
+        },
+        {
+          "_name": "footer1",
+          "_anchor": "footer1-8",
           "_params": {
             "paddingTop": 2,
             "paddingBottom": 2,
