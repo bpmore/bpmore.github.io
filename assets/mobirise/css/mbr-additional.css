@@ -5,6 +5,7 @@
 
 
 
+
 body,
 input,
 textarea,
@@ -476,6 +477,13 @@ h6,
 #header1-5 .mbr-section-lead {
   font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+#header1-5 .mbr-section-lead SPAN {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+#header1-5 .mbr-section-title {
+  font-size: 80px;
 }
 #menu-7 .hide-buttons .nav-btn {
   display: none !important;
