@@ -537,6 +537,12 @@ h6,
 #msg-box8-a p {
   color: #fff;
 }
+#msg-box8-a .mbr-section-title {
+  color: #ffffff;
+}
+#msg-box8-a .lead P {
+  color: #ffffff;
+}
 #content1-b H2 {
   text-align: center;
 }
