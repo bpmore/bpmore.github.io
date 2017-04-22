@@ -1,6 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
 
 
 
@@ -471,6 +472,10 @@ h6,
 #menu-2 .link[aria-expanded="true"],
 #menu-2 .dropdown-item[aria-expanded="true"] {
   color: #c0a375!important;
+}
+#header1-5 .mbr-section-lead {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 #menu-7 .hide-buttons .nav-btn {
   display: none !important;

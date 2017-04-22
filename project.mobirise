@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "index.html",
+    "currentPage": "about.html",
     "name": "Brent Passmore",
     "theme": {
       "name": "mobirise3",
@@ -154,8 +154,15 @@
             "showButtons": false
           },
           "title": "BRENT PASSMORE",
-          "text": "The guy you need to know when you need to know a guy.<br>",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD FOR WINDOWS</a> "
+          "text": "<span style=\"font-style: normal;\">The guy you need to know when you need to know a guy.</span><br>",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD FOR WINDOWS</a> ",
+          "_styles": {
+            ".mbr-section-lead": {
+              "font-family": "'Raleway', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Raleway:400,300,700",
+              "text-align": "center"
+            }
+          }
         },
         {
           "_name": "footer1",
@@ -297,7 +304,7 @@
             "paddingBottom": 3,
             "parallax": true,
             "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/littlerock-copy-2000x1333.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/cropped-bpmore960x4501-1400x455.png",
             "bgColor": "#F2F2F2",
             "bgColorRadio": false,
             "bgVideo": {
