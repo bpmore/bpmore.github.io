@@ -137,7 +137,7 @@
           "_params": {
             "parallax": true,
             "bgImageRadio": true,
-            "showArrow": true,
+            "showArrow": false,
             "bgImage": "@PROJECT_PATH@/assets/images/cropped-bpmore960x4501-1400x455.png",
             "bgColor": "#a07e49",
             "bgColorRadio": false,
