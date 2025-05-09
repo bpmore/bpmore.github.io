@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "jekyll", "~> 4.4.1"
 gem "awesome-jekyll-theme"
 
 group :jekyll_plugins do
