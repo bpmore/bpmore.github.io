@@ -22,7 +22,7 @@ collections:
 # DISABLE GITHUB setting it as an empty string: ""
 # if false, then no contact channels will be display.
 ##
-contact_channels_section: true
+contact_channels_section: false
 contact_channels:
   # email: "example@example.cl"
   github: "https://github.com/bpmore"
