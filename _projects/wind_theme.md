@@ -1,4 +1,4 @@
----
+ ---
 layout: project
 title: Wind Theme
 image: >-
