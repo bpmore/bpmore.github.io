@@ -4,21 +4,14 @@ title: Home
 description: >-
   Especializado en el desarrollo de API RESTs con Ruby on Rails. He participado
   en diversas etapas del ciclo de desarrollo de aplicaciones.
-image: /assets/images/main.avif
+image: /assets/images/bpmore.avif
 main_content: >
   # Brent Passmore
+  
   ## The guy you need to know when you need to know a guy.
 
 
-  **Solum remis procul; poenam, corde?** Te quoque facti agros, querorque,
-  excutis
-
-  quoque vestigia substricta caelestique posuisset litore: suaque. **Et
-  limine**, et
-
-  nimium nec io diemque vocat spicea et horror licet leto fortuna suis cum.
-  **Lecto viae, quod Naxos tumulos quoque.** Et illo de nati iuvenci oris habet,
-  perdidit parantur! **#Rails #Ruby #Python #HTML #Css #Js #AWS**
+  Wannabe minimalist striving to do less wrong one day at a time. Proud [@KEXP](https://kexp.org/) amplifier. Huge fan of [@LuckyDog Guitars](https://luckydogguitars.com) and [@SullyGuitars](https://www.sullyguitars.com/) with a soft spot for [@KustomAmps](https://kustom.com/).
 footer: true
 permalink: /
 ---
