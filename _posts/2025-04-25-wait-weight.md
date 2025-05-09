@@ -10,7 +10,7 @@ author: Me
 
 Remember that White Lion song called wait?
 
-https://www.youtube.com/watch?v=25O8uZaeJco
+<iframe width="560" height="315" src="https://www.youtube.com/embed/25O8uZaeJco?si=db54RORJNRkVFUvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 This information is from the VeSync scale I use. 
 
