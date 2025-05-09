@@ -6,7 +6,8 @@ description: >-
   en diversas etapas del ciclo de desarrollo de aplicaciones.
 image: /assets/images/main.avif
 main_content: >
-  # Hello Friend. Hello World.
+  # Brent Passmore
+  ## The guy you need to know when you need to know a guy.
 
 
   **Solum remis procul; poenam, corde?** Te quoque facti agros, querorque,
