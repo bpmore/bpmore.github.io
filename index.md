@@ -14,3 +14,5 @@ main_content: >
   Wannabe minimalist striving to do less wrong one day at a time. Proud [@KEXP](https://kexp.org/) amplifier. Huge fan of [@LuckyDog Guitars](https://luckydogguitars.com) and [@SullyGuitars](https://www.sullyguitars.com/) with a soft spot for [@KustomAmps](https://kustom.com/).
 footer: true
 permalink: /
+---
+
