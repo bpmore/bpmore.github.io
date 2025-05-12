@@ -6,6 +6,8 @@ category: Health
 author: Me
 ---
 
+## My body is a science fair project.
+
 In 2018, I was overweight (around 260+ pounds) but stayed active, helping a friend remodel their house. Partway through, I began struggling to breathe deeply. After several doctor visits, including a lung MRI that showed no issues, a technician spotted an abnormality in my heart. My lower anterior descending artery (LAD), known as "The Widowmaker," was completely blocked. Miraculously, tiny collateral pathways had formed around the blockage, keeping me alive. I now have two stents and a story to share.
 
 After my heart work, I started working out and making an effort to stay active and then 2020 hit.
