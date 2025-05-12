@@ -56,3 +56,6 @@ jekyll-archives:
   layout: blog
   permalinks:
     category: "/category/:name/"
+
+# Google Analytics
+google_analytics: G-TWQSE4V8P2
