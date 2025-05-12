@@ -3,7 +3,7 @@ layout: post
 title: Science and Determination
 image: /assets/images/science-determination.jpg
 category: Health
-author: Me
+author: Brent Passmore
 ---
 
 ## My body is a science fair project.
