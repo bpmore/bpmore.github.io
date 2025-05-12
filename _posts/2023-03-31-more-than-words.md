@@ -3,7 +3,7 @@ layout: post
 title: More Than Words
 image: /assets/images/scrabble.jpg
 category: Life
-author: Me
+author: Brent Passmore
 ---
 
 A few years ago, my friend Tonya kept me sane through games of Words with Friends. Seriously. I would wake in the middle of the night and she would have played a word. I would play my turn. A few seconds later, she had played her turn.

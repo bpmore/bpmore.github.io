@@ -3,7 +3,7 @@ layout: post
 title: Easy 4 Step Guide to Pricing Music Gear Using Reverb.com
 image: /assets/images/pexels-photo-68710.jpeg
 category: Music
-author: Me
+author: Brent Passmore
 ---
 
 This post started from a conversation with 2 of my best friends. One was passing along information on a guitar for sale. In short, the seller was asking retail price or more for his used gear.

@@ -3,7 +3,7 @@ layout: post
 title: Fuck Cancer And The Horse It Rode In On
 image: /assets/images/miguel-bruna-TzVN0xQhWaQ-unsplash-scaled.jpg
 category: Life
-author: Me
+author: Brent Passmore
 ---
 
 The message read:

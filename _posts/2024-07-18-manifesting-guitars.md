@@ -3,7 +3,7 @@ layout: post
 title: Manifesting Guitars
 image: /assets/images/sturner-1129-close-up.jpg
 category: Music
-author: Me
+author: Brent Passmore
 ---
 Here are the guitars I have been thinking about lately. Let's manifest, shall we?
 

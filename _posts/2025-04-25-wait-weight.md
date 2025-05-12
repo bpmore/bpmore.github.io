@@ -3,7 +3,7 @@ layout: post
 title: Wait. Weight.
 image: /assets/images/pink-scale.jpg
 category: Health
-author: Me
+author: Brent Passmore
 ---
 
 ### A Quick Update on Weight And Other Numbers
