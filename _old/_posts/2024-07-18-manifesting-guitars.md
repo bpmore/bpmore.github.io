@@ -4,7 +4,6 @@ title: Manifesting Guitars
 image: /assets/images/sturner-1129-close-up.jpg
 category: Music
 author: Brent Passmore
-excerpt: "Here are a few guitars that have caught my eye."
 ---
 Here are the guitars I have been thinking about lately. Let's manifest, shall we?
 

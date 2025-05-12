@@ -1,38 +1,94 @@
-<!doctype html>
-<html lang="{{site.active_lang}}">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="{{ '/assets/css/dist-style.css' | relative_url }}" rel="stylesheet" />
-  <link href="{{ '/assets/css/fonts.css' | relative_url }}" rel="stylesheet" />
-  {% if site.typewriter_effect %}
-  <script src="https://unpkg.com/typeit@8.8.4/dist/index.umd.js"></script>
-  {% endif %} {% seo %} {% include custom_head.html %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    footer ul.social-links, footer ul.social-links li {
+      list-style: none !important;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #007bff;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    a:focus, .button.primary:focus {
+      outline: 3px solid #005bbb;
+      outline-offset: 2px;
+    }
+    .social-links a {
+      font-size: 1.2rem;
+    }
+    small {
+      font-size: 0.875rem;
+    }
+    .header-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .header-link h1, .header-link p {
+      color: #333;
+    }
+  </style>
 </head>
-
-<body class="bg-white text-gray-900 dark:bg-gray-700 dark:text-slate-100">
-  {% if site.typewriter_effect %}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      new TypeIt("h1", {}).go();
-    });
-  </script>
-  {% endif %} {% include navbar.html %} {{ content }} {% include footer.html
-  %}
-  <script>
-    document.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent the default link action temporarily
-        link.classList.add("gentle-clicked");
-
-        setTimeout(function () {
-          link.classList.remove("gentle-clicked");
-          window.location.href = link.href; // Navigate to the link after the animation
-        }, 300); // Duration of the gentle bounce animation
-      });
-    });
-  </script>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="container" role="banner">
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+      <a href="https://brentpassmore.com" class="header-link" aria-label="Visit Brent Passmore's homepage">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <img src="{{ '/assets/images/bpmore.avif' | relative_url }}" alt="Brent Passmore logo" style="max-width: 100px; height: auto;">
+          <div>
+            <h1>{{ site.title }}</h1>
+            <p>{{ site.description }}</p>
+          </div>
+        </div>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main-content" role="main">
+    {{ content }}
+  </main>
+  <footer class="container" role="contentinfo" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+      </ul>
+    </nav>
+    <ul class="social-links" style="display: flex; gap: 1rem; margin: 1rem 0; padding: 0; list-style: none;">
+      {% if site.social.bluesky %}
+      <li><a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" style="color: #0284c7;" aria-label="Follow us on Blue Sky"><i class="fas fa-cloud fa-lg"></i></a></li>
+      {% endif %}
+      {% if site.social.facebook %}
+        <li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" style="color: #1877f2;" aria-label="Follow us on Facebook"><i class="fab fa-facebook fa-lg"></i></a></li>
+      {% endif %}
+      {% if site.social.github %}
+        <li><a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" style="color: #000;" aria-label="Visit our GitHub profile"><i class="fab fa-github fa-lg"></i></a></li>
+      {% endif %}
+      {% if site.social.x %}
+      <li><a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" style="color: #000;" aria-label="Follow us on X"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+      {% endif %}
+    </ul>
+    <p>© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
+  </footer>
 </body>
-
 </html>

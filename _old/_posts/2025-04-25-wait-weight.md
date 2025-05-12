@@ -4,7 +4,6 @@ title: Wait. Weight.
 image: /assets/images/pink-scale.jpg
 category: Health
 author: Brent Passmore
-excerpt: "An often updated post with my weight numbers."
 ---
 
 ### A Quick Update on Weight And Other Numbers

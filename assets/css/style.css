@@ -1,19 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@keyframes gentle-bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-3px); /* Slight upward movement */
-  }
-  100% {
-    transform: translateY(0); /* Return to original position */
-  }
+# assets/css/style.css
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
 }
-
-a.gentle-clicked {
-  animation: gentle-bounce 0.3s ease-out; /* Shorter, smoother animation */
+header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+article {
+  margin-bottom: 30px;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  color: #666;
 }

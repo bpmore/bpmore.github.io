@@ -1,0 +1,95 @@
+title: Brent Passmore
+description: Personal website of Brent Passmore
+url: https://brentpassmore.com
+baseurl: ""
+logo: /assets/images/logo.avif
+markdown: kramdown
+remote_theme: a-chacon/awesome-jekyll-theme # If using the theme remotely
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+
+##
+# Typewritter configuration.
+# Feel free to disable if you don't like it.
+##
+#typewriter_effect: false
+
+##
+# Collections configuration
+##
+#collections:
+#  projects:
+#    output: false
+
+##
+# Contact Channels configuration
+# Uncomment for enable. Available contact channels are email, github, telegram, stackoverflow, discord, mastodon.
+# Please fell free to send a PR if you need a new one.
+# DISABLE GITHUB setting it as an empty string: ""
+# if false, then no contact channels will be display.
+##
+contact_channels_section: true
+contact_channels:
+  # email: "example@example.cl"
+  github: "https://github.com/bpmore"
+  # telegram: "https://t.me/"
+  # stackoverflow: "https://stackoverflow.com"
+  # discord: "https://discord.com/"
+  # mastodon: "https://lile.cl/"
+
+##
+# Plugins configuration
+##
+plugins:
+#  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+#  - jekyll-polyglot
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /:year/:month/:day/:title/
+#  - scope:
+#      path: ""
+#      type: projects
+#    values:
+#      layout: project
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  
+##
+# Polyglot configuration
+##
+#languages: ["en"]
+#default_lang: "en"
+#exclude_from_localization: ["javascript", "images", "css", "public"]
+#parallel_localization: true
+
+##
+# Archives configuration
+##
+#jekyll-archives:
+#  enabled:
+#    - categories
+#  layout: blog
+#  permalinks:
+#    category: "/category/:name/"
+
+# Google Analytics
+#google_analytics: G-TWQSE4V8P2

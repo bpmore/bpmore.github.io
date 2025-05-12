@@ -4,7 +4,6 @@ title: Science and Determination
 image: /assets/images/science-determination.jpg
 category: Health
 author: Brent Passmore
-excerpt: "Documenting my weight and A1c."
 ---
 
 ## My body is a science fair project.
