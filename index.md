@@ -6,7 +6,7 @@ title: Home
   {% for post in site.posts limit:1 %}
   <article><p>Wannabe minimalist striving to do less wrong one day at a time.</p>
     <p>Proud <a href="https://kexp.org">@KEXP</a> amplifier.</p>
-    <p>Huge fan of @LuckyDog Guitars and @SullyGuitars with a soft spot for @KustomAmps.</p></article>
+    <p>Huge fan of <a href="https://luckydogguitars.store/">@LuckyDog Guitars</a> and <a href="https://sullyguitars.com">@SullyGuitars</a> with a soft spot for <a href="https://kustom.com/">@KustomAmps</a>.</p></article>
   {% endfor %}
 </div>
 
