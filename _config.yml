@@ -1,19 +1,28 @@
 title: Brent Passmore
-logo: /assets/images/logo.avif
+description: Personal website of Brent Passmore
+url: https://brentpassmore.com
 baseurl: ""
+logo: /assets/images/logo.avif
+markdown: kramdown
+remote_theme: a-chacon/awesome-jekyll-theme # If using the theme remotely
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
 
 ##
 # Typewritter configuration.
 # Feel free to disable if you don't like it.
 ##
-typewriter_effect: false
+#typewriter_effect: false
 
 ##
 # Collections configuration
 ##
-collections:
-  projects:
-    output: false
+#collections:
+#  projects:
+#    output: false
 
 ##
 # Contact Channels configuration
@@ -22,7 +31,7 @@ collections:
 # DISABLE GITHUB setting it as an empty string: ""
 # if false, then no contact channels will be display.
 ##
-contact_channels_section: false
+contact_channels_section: true
 contact_channels:
   # email: "example@example.cl"
   github: "https://github.com/bpmore"
@@ -35,27 +44,52 @@ contact_channels:
 # Plugins configuration
 ##
 plugins:
-  - jekyll-archives
+#  - jekyll-archives
   - jekyll-seo-tag
-  - jekyll-polyglot
+  - jekyll-feed
+  - jekyll-sitemap
+#  - jekyll-polyglot
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /:year/:month/:day/:title/
+#  - scope:
+#      path: ""
+#      type: projects
+#    values:
+#      layout: project
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  
 ##
 # Polyglot configuration
 ##
-languages: ["en"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "public"]
-parallel_localization: true
+#languages: ["en"]
+#default_lang: "en"
+#exclude_from_localization: ["javascript", "images", "css", "public"]
+#parallel_localization: true
 
 ##
 # Archives configuration
 ##
-jekyll-archives:
-  enabled:
-    - categories
-  layout: blog
-  permalinks:
-    category: "/category/:name/"
+#jekyll-archives:
+#  enabled:
+#    - categories
+#  layout: blog
+#  permalinks:
+#    category: "/category/:name/"
 
 # Google Analytics
 #google_analytics: G-TWQSE4V8P2
