@@ -39,32 +39,31 @@ title: Home
     }
   }
   .responsive-grid article:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 1px solid #005bbb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 </style>
 
 <div class="responsive-grid">
   {% for post in site.posts limit:3 %}
-  <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;" aria-label="Read {{ post.title }}">
-    <article style="display: flex; flex-direction: column; height: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 4px; transition: box-shadow 0.2s, border 0.2s;">
-      <div style="flex: 1;">
-        {% if post.image %}
-        <img src="{{ post.image | relative_url }}" alt="Featured image for {{ post.title }}" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
-        {% endif %}
-        <h2 style="margin: 0.5rem 0;">{{ post.title }}</h2>
-        <p><small>Posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
-        {% if post.categories %}
-        <p><small>Categories: {% for category in post.categories %}<span style="color: #005bbb;" aria-label="{{ category }} category">{{ category }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</small></p>
-        {% endif %}
+    <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;" aria-label="Read {{ post.title }}">
+      <article style="display: flex; flex-direction: column; height: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 4px; transition: box-shadow 0.2s;">
+        <div style="flex: 1;">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="Featured image for {{ post.title }}" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
+          {% endif %}
+          <h2 style="margin: 0.5rem 0;">{{ post.title }}</h2>
+          <p><small>Posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
+          {% if post.categories %}
+            <p><small>Categories: {% for category in post.categories %}<span style="color: #005bbb;" aria-label="{{ category }} category">{{ category }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</small></p>
+          {% endif %}
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% endif %}
+        </div>
         {% if post.excerpt %}
-        {{ post.excerpt }}
+          <span class="button primary" role="button" style="margin-top: 1rem; display: inline-block; pointer-events: none;">Read More</span>
         {% endif %}
-      </div>
-      {% if post.excerpt %}
-      <a href="{{ post.url | relative_url }}" class="button primary" role="button" style="margin-top: 1rem; display: inline-block;" aria-label="Read more about {{ post.title }}">Read More</a>
-      {% endif %}
-    </article>
-  </a>
+      </article>
+    </a>
   {% endfor %}
 </div>
