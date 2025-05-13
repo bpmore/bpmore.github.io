@@ -13,25 +13,25 @@ In 2018, I was overweight (around 260+ pounds) but stayed active, helping a frie
 
 After my heart work, I started working out and making an effort to stay active and then 2020 hit.
 
-### October 28, 2020
+### October 2020
 - **A1c**: 7.3% (high, normal <7.0%)
 - **Weight**: 250 lb.
 - **Context**: Early indication of prediabetes/early type 2 diabetes. No GLP-1/GIP agonists or Metformin noted.
 
-In 2021, I weighed around 245–250 pounds, wore XXL shirts, and had a 38–40-inch waist. I developed severe shoulder pain, barely able to move my arm. An X-ray revealed a minor rotator cuff tear. Physical therapy didn’t help, and my therapist asked if I had diabetes. I wasn’t sure, but a physical the following week showed my A1c at 7.3, indicating diabetes. My doctor prescribed a low dose of Metformin. Within a week, my shoulder inflammation decreased, allowing me to start effective rehabilitation.
-
-### April, 2021
+### April 2021
 - **A1c**: 6.5% (normal <7.0%, but high for stricter ranges like 4.0–6.0%)
 - **Weight**: 250 lb.
 - **Context**: Improved A1c.
 
-### October, 2021
+In 2021, I weighed around 245–250 pounds, wore XXL shirts, and had a 38–40-inch waist. I developed severe shoulder pain, barely able to move my arm. An X-ray revealed a minor rotator cuff tear. Physical therapy didn’t help, and my therapist asked if I had diabetes. I wasn’t sure, but a physical the following week showed my A1c at 7.3, indicating diabetes. My doctor prescribed a low dose of Metformin. Within a week, my shoulder inflammation decreased, allowing me to start effective rehabilitation.
+
+### October 2021
 - **A1c**: 7.0% (borderline, normal <7.0%)
 - **Weight**: 250 lb.
 - **Metformin**: Started at 500 mg daily with breakfast.
 - **Context**: A1c fluctuated, still indicating poor control.
 
-### April, 2022
+### April 2022
 - **A1c**: 7.4% (high, normal <7.0%)
 - **Weight**: 250 lb.
 - **Metformin**: 500 mg daily with breakfast.
@@ -39,21 +39,21 @@ In 2021, I weighed around 245–250 pounds, wore XXL shirts, and had a 38–40-i
 
 In 2022, my A1c levels kept rising. In October, I began taking Mounjaro, which cost $25 a month for a year through a promotion. Over that year, I lost about 50 pounds, going from XXL to size L shirts and from a 38–40-inch to a 34-inch waist. Mounjaro kickstarted my weight loss, improving how my body felt. Feeling better motivated me to be more active, which led to further weight loss. This sparked a mental reset, prompting me to cut out sugar, adopt a low-calorie diet, and maintain healthier eating habits.
 
-### October, 2022
+### October 2022
 - **A1c**: 7.6% (high, normal <7.0%)
 - **Weight**: 245 lb.
 - **Mounjaro**: Started at 2.5 mg weekly.
 - **Metformin**: 1000 mg twice daily.
 - **Context**: Annual exam. Mounjaro initiated for glycemic control and weight loss due to high A1c and overweight status.
 
-### April, 2023
+### April 2023
 - **A1c**: 5.1% (normal, <7.0%)
 - **Weight**: 215 lb.
 - **Mounjaro**: Continued (increased to 7.5 mg, per titration plan).
 - **Metformin**: Continued.
 - **Context**: Significant A1c drop (7.6% to 5.1% in 6 months), due to Mounjaro, Metformin, and cardio exercise.
 
-### October, 2023
+### October 2023
 - **A1c**: 5.2% (normal, <7.0%)
 - **Weight**: 195 lb.
 - **Mounjaro**: Stopped (~1 year of use, stopped due to insurance non-coverage).
@@ -62,12 +62,12 @@ In 2022, my A1c levels kept rising. In October, I began taking Mounjaro, which c
 
 In the six months after stopping Mounjaro in 2023, I faced challenges as my appetite returned. For the first time in a year, I felt hunger and craved food, eating a lot of peanut M&Ms. This led to a quick 10-pound weight gain, but I stabilized at 205–210 pounds. I continued daily cardio and worked on adapting to hunger. In April 2024, I began taking Ozempic to manage my weight and health.
 
-### April, 2024
+### April 2024
 - **Ozempic**: Started.
 - **Metformin**: Continued.
 - **Context**: Ozempic initiated due to insurance coverage, maintaining A1c and weight loss post-Mounjaro.
 
-### May, 2024
+### May 2024
 - **A1c**: 5.3% (normal, <7.0%)
 - **Weight**: 208 lb.
 - **Ozempic**: 1 mg weekly, replaced 0.5 mg dose.
@@ -76,7 +76,7 @@ In the six months after stopping Mounjaro in 2023, I faced challenges as my appe
 
 In May and June 2024, I adopted a ketogenic diet, eliminating all sugar. I stopped focusing on structured workouts but stayed active by spending time outdoors whenever possible. I prioritized quality time with family and friends, maintaining an active and balanced lifestyle.
 
-### July, 2024
+### July 2024
 - **Weight**: 195 lb.
 - **Mounjaro**: Stopped.
 - **Ozempic**: Continued at 1 mg weekly.
@@ -93,7 +93,7 @@ This has replaced coffee and become my morning ritual.
 
 I’ve found an affordable, high-protein lunch option at Wendy’s: meat patties ($1.35 each) and cheese slices ($0.40 each), providing 60–80 grams of protein for under $5. For dinner, I eat shrimp, fish, or chicken with broccoli or green beans. Sticking to a consistent routine has been key. I no longer track calories as I did while on Mounjaro, instead trusting my ketogenic process. I monitor ketosis with a Keto-Mojo glucose and ketone meter and practice 36-hour fasts every 3–4 weeks. I now fit into my son’s medium-sized shirts and wear pants with a 30–32-inch waist.
 
-### November 4, 2024
+### November 2024
 - **A1c**: 5.0% (normal, <7.0%)
 - **Weight**: 190 lb.
 - **Mounjaro**: Stopped.
@@ -101,7 +101,7 @@ I’ve found an affordable, high-protein lunch option at Wendy’s: meat patties
 - **Metformin**: Continued at 1000 mg twice daily.
 - **Context**: A1c reached target 5.0%. Weight loss continued.
 
-### May 5, 2025
+### May 2025
 - **A1c**: 4.8% (normal, <7.0%)
 - **Weight**: 172 lb.
 - **Ozempic**: 2 mg weekly.
