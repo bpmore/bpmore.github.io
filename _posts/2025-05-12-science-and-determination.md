@@ -18,7 +18,7 @@ After my heart work, I started working out and making an effort to stay active a
 - **Weight**: 250 lb.
 - **Context**: Early indication of prediabetes/early type 2 diabetes. No GLP-1/GIP agonists or Metformin noted.
 
-In 2021, I weighed around 245–250 pounds, wore XXL shirts, and had a 38–40-inch waist. I developed severe shoulder pain, barely able to move my arm. An X-ray revealed a minor rotator cuff tear. Physical therapy didn’t help, and my therapist asked if I had diabetes. I wasn’t sure, but a physical the following week showed my A1c at 7.0, indicating diabetes. My doctor prescribed a low dose of Metformin. Within a week, my shoulder inflammation decreased, allowing me to start effective rehabilitation.
+In 2021, I weighed around 245–250 pounds, wore XXL shirts, and had a 38–40-inch waist. I developed severe shoulder pain, barely able to move my arm. An X-ray revealed a minor rotator cuff tear. Physical therapy didn’t help, and my therapist asked if I had diabetes. I wasn’t sure, but a physical the following week showed my A1c at 7.3, indicating diabetes. My doctor prescribed a low dose of Metformin. Within a week, my shoulder inflammation decreased, allowing me to start effective rehabilitation.
 
 ### April, 2021
 - **A1c**: 6.5% (normal <7.0%, but high for stricter ranges like 4.0–6.0%)
