@@ -74,37 +74,3 @@ img.logo {
     filter: brightness(90%); /* Adjust if logo is too bright */
   }
 }
-
-
-
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 1.6;
-}
-header {
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #007bff;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-article {
-  margin-bottom: 30px;
-}
-footer {
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-  color: #666;
-}
