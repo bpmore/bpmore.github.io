@@ -1,35 +1,4 @@
 # assets/css/style.css
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 1.6;
-}
-header {
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #007bff;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-article {
-  margin-bottom: 30px;
-}
-footer {
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-  color: #666;
-}
 :root {
   /* Light mode variables */
   --background-color: #ffffff;
@@ -43,17 +12,19 @@ footer {
   --button-text: #ffffff;
 }
 
-/* Dark mode variables */
-.dark-mode, [data-theme="dark"] {
-  --background-color: #1a1a1a;
-  --text-color: #e0e0e0;
-  --link-color: #66b3ff;
-  --header-bg: #2c2c2c;
-  --footer-bg: #2c2c2c;
-  --post-bg: #252525;
-  --border-color: #444444;
-  --button-bg: #66b3ff;
-  --button-text: #1a1a1a;
+/* Dark mode variables for system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #66b3ff;
+    --header-bg: #2c2c2c;
+    --footer-bg: #2c2c2c;
+    --post-bg: #252525;
+    --border-color: #444444;
+    --button-bg: #66b3ff;
+    --button-text: #1a1a1a;
+  }
 }
 
 /* Apply variables */
@@ -87,27 +58,53 @@ button, .btn {
   color: var(--button-text);
 }
 
-/* Toggle button */
-.theme-toggle {
-  cursor: pointer;
-  padding: 8px 12px;
-  border: none;
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  border-radius: 4px;
+/* Category page styles */
+.categories section, .category-posts {
+  background-color: var(--post-bg);
+  border: 1px solid var(--border-color);
 }
 
-/* Responsive adjustments */
+/* Ensure logo visibility */
+img.logo {
+  filter: brightness(100%);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --background-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --link-color: #66b3ff;
-    --header-bg: #2c2c2c;
-    --footer-bg: #2c2c2c;
-    --post-bg: #252525;
-    --border-color: #444444;
-    --button-bg: #66b3ff;
-    --button-text: #1a1a1a;
+  img.logo {
+    filter: brightness(90%); /* Adjust if logo is too bright */
   }
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+article {
+  margin-bottom: 30px;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  color: #666;
 }
