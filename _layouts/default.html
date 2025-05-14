@@ -1,101 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8">
-  <meta name="color-scheme" content="light dark">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <style>
-    footer ul.social-links, footer ul.social-links li {
-      list-style: none !important;
-    }
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #007bff;
-      color: white;
-      padding: 8px;
-      z-index: 100;
-    }
-    .skip-link:focus {
-      top: 0;
-    }
-    a:focus, .button.primary:focus {
-      outline: 3px solid #005bbb;
-      outline-offset: 2px;
-    }
-    .social-links a {
-      font-size: 1.2rem;
-    }
-    small {
-      font-size: 0.875rem;
-    }
-    .header-link {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TWQSE4V8P2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TWQSE4V8P2');
-</script>
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header class="container" role="banner">
-    <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
-      <a href="https://brentpassmore.com" class="header-link" aria-label="Visit Brent Passmore's homepage">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <img src="{{ '/assets/images/bpmore.avif' | relative_url }}" alt="Brent Passmore logo" style="max-width: 100px; height: auto;">
-          <div>
-            <h1>{{ site.title }}</h1>
-            <p>{{ site.description }}</p>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      /* Minimal custom CSS to avoid redundancy with pico.css */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--primary);
+        color: var(--primary-inverse);
+        padding: var(--spacing);
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+      .social-links {
+        display: flex;
+        gap: var(--spacing);
+        margin: var(--spacing) 0;
+        padding: 0;
+        list-style: none;
+      }
+      .social-links a {
+        font-size: 1.2rem;
+      }
+      .header-link img {
+        max-width: 100px;
+        height: auto;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWQSE4V8P2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TWQSE4V8P2');
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="container" role="banner">
+      <div class="grid">
+        <a href="https://brentpassmore.com" class="header-link" aria-label="Visit Brent Passmore's homepage">
+          <div class="grid" style="gap: var(--spacing); align-items: center;">
+            <img src="{{ '/assets/images/bpmore.avif' | relative_url }}" alt="Brent Passmore logo" class="header-link">
+            <div>
+              <h1>{{ site.title }}</h1>
+              <p>{{ site.description }}</p>
+            </div>
           </div>
-        </div>
-      </a>
-      <nav aria-label="Primary navigation">
-        <ul>
+        </a>
+        <nav aria-label="Primary navigation">
+          <ul role="list" class="grid">
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+            <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container" id="main-content" role="main">
+      {{ content }}
+    </main>
+    <footer class="container" role="contentinfo">
+      <nav aria-label="Footer navigation">
+        <ul role="list" class="grid">
           <li><a href="{{ '/' | relative_url }}">Home</a></li>
           <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
           <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <main class="container" id="main-content" role="main">
-    {{ content }}
-  </main>
-  <footer class="container" role="contentinfo" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+      <ul role="list" class="social-links">
+        {% if site.social.bluesky %}
+        <li><a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" aria-label="Follow us on Blue Sky"><i class="fas fa-cloud fa-lg"></i></a></li>
+        {% endif %}
+        {% if site.social.facebook %}
+        <li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Follow us on Facebook"><i class="fab fa-facebook fa-lg"></i></a></li>
+        {% endif %}
+        {% if site.social.github %}
+        <li><a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Visit our GitHub profile"><i class="fab fa-github fa-lg"></i></a></li>
+        {% endif %}
+        {% if site.social.x %}
+        <li><a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" aria-label="Follow us on X"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+        {% endif %}
       </ul>
-    </nav>
-    <ul class="social-links" style="display: flex; gap: 1rem; margin: 1rem 0; padding: 0; list-style: none;">
-      {% if site.social.bluesky %}
-      <li><a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" style="color: #0284c7;" aria-label="Follow us on Blue Sky"><i class="fas fa-cloud fa-lg"></i></a></li>
-      {% endif %}
-      {% if site.social.facebook %}
-        <li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" style="color: #1877f2;" aria-label="Follow us on Facebook"><i class="fab fa-facebook fa-lg"></i></a></li>
-      {% endif %}
-      {% if site.social.github %}
-        <li><a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" style="color: #000;" aria-label="Visit our GitHub profile"><i class="fab fa-github fa-lg"></i></a></li>
-      {% endif %}
-      {% if site.social.x %}
-      <li><a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" style="color: #000;" aria-label="Follow us on X"><i class="fab fa-x-twitter fa-lg"></i></a></li>
-      {% endif %}
-    </ul>
-    <p>© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
-  </footer>
-</body>
+      <p>© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
+    </footer>
+  </body>
 </html>
