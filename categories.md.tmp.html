@@ -6,8 +6,11 @@
 <h2>title: Categories</h2>
 
 <p><main class="container">
-  <h1>Blog Posts</h1>
+  <h1>Categories</h1>
+  {% assign categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
+  {% for category in categories %}
   <section>
+    <h2><button class="outline secondary">{{ category | capitalize }}</button></h2>
     <div class="grid">
       {% for post in site.posts %}
         {% if post.categories contains category %}
