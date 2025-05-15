@@ -24,7 +24,7 @@ title: Categories
           {% endif %}
           <footer>
             <div role="group">
-              <a href="{{ post.url | relative_url }}" role="button" class="secondary" aria-label="Read more about {{ post.title }}">Read More</a>
+              <a href="{{ post.url | relative_url }}" role="button" class="primary" aria-label="Read more about {{ post.title }}">Read More</a>
             </div>
           </footer>
         </article>
