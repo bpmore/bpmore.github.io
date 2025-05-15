@@ -41,13 +41,7 @@
   </main>
   <footer class="container">
     <section>
-      <nav aria-label="Footer navigation">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}role="button" class="outline" aria-current="page"{% endif %}>Home</a></li>
-          <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog' %}role="button" class="outline" aria-current="page"{% endif %}>Blog</a></li>
-          <li><a href="{{ '/categories' | relative_url }}" {% if page.url == '/categories' %}role="button" class="outline" aria-current="page"{% endif %}>Categories</a></li>
-        </ul>
-      </nav>
+      <h3>Socials</h3>
       <div role="group" class="social-links">
         {% if site.social.bluesky %}
         <a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" aria-label="Follow on Blue Sky" role="button" class="outline primary">Blue Sky</a>
