@@ -29,10 +29,14 @@ title: Home
       <p><small>Categories: {% for category in post.categories %}<a href="{{ '/blog/category/' | append: category | relative_url }}" aria-label="{{ category }} category">{{ category }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</small></p>
       {% endif %}
       {% if post.excerpt %}
-      {{ post.excerpt }}
-      {% endif %}<footer>
-  <a href="{{ post.url | relative_url }}" role="button" class="secondary" aria-label="Read more about {{ post.title }}">Read More</a></footer>
-  </article>
+      <div>{{ post.excerpt }}</div>
+      {% endif %}
+      <footer>
+        <div role="group">
+          <a href="{{ post.url | relative_url }}" role="button" class="outline primary" aria-label="Read more about {{ post.title }}">Read More</a>
+        </div>
+      </footer>
+    </article>
     {% endfor %}
   </div>
 </main>
