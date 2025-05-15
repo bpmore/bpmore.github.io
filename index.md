@@ -20,7 +20,7 @@ title: Home
     <article>
       {% if post.image %}
       <figure>
-        <img src="{{ post.image | relative_url }}" alt="Featured image for {{ post.title }}" width="150" height="150">
+        <img src="{{ post.image | relative_url }}" alt="Featured image for {{ post.title }}">
       </figure>
       {% endif %}
       <h2><a href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">{{ post.title }}</a></h2>
@@ -30,9 +30,9 @@ title: Home
       {% endif %}
       {% if post.excerpt %}
       {{ post.excerpt }}
-      <a href="{{ post.url | relative_url }}" role="button" class="secondary" aria-label="Read more about {{ post.title }}">Read More</a>
-      {% endif %}
-    </article>
+      {% endif %}<footer>
+  <a href="{{ post.url | relative_url }}" role="button" class="secondary" aria-label="Read more about {{ post.title }}">Read More</a></footer>
+  </article>
     {% endfor %}
   </div>
 </main>

@@ -27,11 +27,11 @@
           </div>
         </div>
       </a>
-      <nav aria-label="Primary navigation" role="group">
+      <nav aria-label="Primary navigation">
         <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-          <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+          <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}role="button" class="outline" aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog' %}role="button" class="outline" aria-current="page"{% endif %}>Blog</a></li>
+          <li><a href="{{ '/categories' | relative_url }}" {% if page.url == '/categories' %}role="button" class="outline" aria-current="page"{% endif %}>Categories</a></li>
         </ul>
       </nav>
     </div>
@@ -43,23 +43,23 @@
     <section>
       <nav aria-label="Footer navigation">
         <ul>
-          <li><a href="{{ '/' | relative_url }}" role="button" class="outline primary">Home</a></li>
-          <li><a href="{{ '/blog' | relative_url }}" role="button" class="outline primary">Blog</a></li>
-          <li><a href="{{ '/categories' | relative_url }}" role="button" class="outline primary">Categories</a></li>
+          <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}role="button" class="outline" aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog' %}role="button" class="outline" aria-current="page"{% endif %}>Blog</a></li>
+          <li><a href="{{ '/categories' | relative_url }}" {% if page.url == '/categories' %}role="button" class="outline" aria-current="page"{% endif %}>Categories</a></li>
         </ul>
       </nav>
       <div role="group" class="social-links">
         {% if site.social.bluesky %}
-        <a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" aria-label="Follow on Blue Sky" role="button" class="outline secondary">Blue Sky</a>
+        <a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" aria-label="Follow on Blue Sky" role="button" class="secondary">Blue Sky</a>
         {% endif %}
         {% if site.social.facebook %}
-        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Follow on Facebook" role="button" class="outline secondary">Facebook</a>
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Follow on Facebook" role="button" class="secondary">Facebook</a>
         {% endif %}
         {% if site.social.github %}
-        <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Visit GitHub profile" role="button" class="outline secondary">GitHub</a>
+        <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Visit GitHub profile" role="button" class="secondary">GitHub</a>
         {% endif %}
         {% if site.social.x %}
-        <a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" aria-label="Follow on X" role="button" class="outline secondary">X</a>
+        <a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" aria-label="Follow on X" role="button" class="secondary">X</a>
         {% endif %}
       </div>
       <p>© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
