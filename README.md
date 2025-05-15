@@ -1,0 +1,1 @@
+This is the Jekyll theme that runs [brentpassmore.com](https://brentpassmore.com). A work in progress, it was originally generated from the [a-chacon/awesome-jekyll-theme](https://github.com/a-chacon/awesome-jekyll-theme). The current version was rebuilt from scratch by chatting with Grok. It uses [Pico CSS](https://picocss.com) and not much else.
