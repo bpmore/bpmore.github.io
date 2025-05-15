@@ -3,7 +3,7 @@ layout: default
 title: Categories
 ---
 # Browse by Category
-
+<article class="container">
 {% assign categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
 {% for category in categories %}
   <h3>{{ category }}</h3>
@@ -15,3 +15,4 @@ title: Categories
     {% endfor %}
   </ul>
 {% endfor %}
+</article>

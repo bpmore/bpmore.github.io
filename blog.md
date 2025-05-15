@@ -1,5 +1,5 @@
 {% for post in site.posts %}
-  <article>
+  <article class="container">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <p><small>Posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
     {% if post.categories %}

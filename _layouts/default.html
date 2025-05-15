@@ -5,7 +5,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/assets/css/pico.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <!-- Google tag (gtag.js) -->
@@ -19,52 +19,52 @@
 </script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header class="container" role="banner">
-    <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+  <header class="container">
+    <section class="component">
+    <div>
       <a href="https://brentpassmore.com" class="header-link" aria-label="Visit Brent Passmore's homepage">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <img src="{{ '/assets/images/bpmore.avif' | relative_url }}" alt="Brent Passmore logo" style="max-width: 100px; height: auto;">
-          <div>
+        <div role="group">
+          <img src="{{ '/assets/images/bpmore.avif' | relative_url }}" alt="Brent Passmore logo" style="max-width: 150px; height: 150px;">
+          <div role="group">
             <h1>{{ site.title }}</h1>
             <p>{{ site.description }}</p>
           </div>
         </div>
       </a>
+      <div role="group">
       <nav aria-label="Primary navigation">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-          <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
-        </ul>
+          <a href="{{ '/' | relative_url }}">Home</a> <a href="{{ '/blog' | relative_url }}">Blog</a> <a href="{{ '/categories' | relative_url }}">Categories</a>
       </nav>
     </div>
+    </div>
+    </section>
   </header>
-  <main class="container" id="main-content" role="main">
+  <main class="container">
+    <section>
     {{ content }}
+    </section>
   </main>
-  <footer class="container" role="contentinfo" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <footer class="container">
     <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
-      </ul>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/blog' | relative_url }}">Blog</a>
+      <a href="{{ '/categories' | relative_url }}">Categories</a>
     </nav>
-    <ul class="social-links" style="display: flex; gap: 1rem; margin: 1rem 0; padding: 0; list-style: none;">
+
+    <div class="social-links">
       {% if site.social.bluesky %}
-      <li><a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" style="color: #0284c7;" aria-label="Follow us on Blue Sky"><i class="fas fa-cloud fa-lg"></i></a></li>
+      <a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" style="color: #0284c7;" aria-label="Follow us on Blue Sky"><i class="fas fa-cloud fa-lg"></i></a>
       {% endif %}
       {% if site.social.facebook %}
-        <li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" style="color: #1877f2;" aria-label="Follow us on Facebook"><i class="fab fa-facebook fa-lg"></i></a></li>
+      <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" style="color: #1877f2;" aria-label="Follow us on Facebook"><i class="fab fa-facebook fa-lg"></i></a>
       {% endif %}
       {% if site.social.github %}
-        <li><a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" style="color: #000;" aria-label="Visit our GitHub profile"><i class="fab fa-github fa-lg"></i></a></li>
+      <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" style="color: #000;" aria-label="Visit our GitHub profile"><i class="fab fa-github fa-lg"></i></a>
       {% endif %}
       {% if site.social.x %}
-      <li><a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" style="color: #000;" aria-label="Follow us on X"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+      <a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" style="color: #000;" aria-label="Follow us on X"><i class="fab fa-x-twitter fa-lg"></i></a>
       {% endif %}
-    </ul>
+    </div>
     <p>© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
   </footer>
 </body>
