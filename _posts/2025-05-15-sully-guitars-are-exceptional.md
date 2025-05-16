@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Why Sully Guitars Are Exceptional
-image: /assets/images/sullyguitars.jpeg
+title: Sully Guitars Are Exceptional
+image: /assets/images/sully-guitars.jpeg
 category: Music
 author: Brent Passmore
 excerpt: "A deep dive into craftsmanship and innovation."
