@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lucky Dog Guitars Are a Cut Above the Rest
-image: /assets/images/lucky-dog.jpeg
+image: /assets/images/lucky-dog.jpg
 category: Music
 author: Brent Passmore
 excerpt: "Nestled in the rolling foothills of eastern Tennessee."
