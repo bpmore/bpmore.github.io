@@ -2,7 +2,7 @@
 layout: post
 title: Sully Guitars Are Exceptional
 image: /assets/images/sully-guitars.jpeg
-category: [Music, AI Generated]
+category: Music
 author: Brent Passmore
 excerpt: "A deep dive into craftsmanship and innovation."
 ---
