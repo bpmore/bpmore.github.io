@@ -1,63 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="color-scheme" content="light dark">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/pico.min.css' | relative_url }}">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWQSE4V8P2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TWQSE4V8P2');
-  </script>
-</head>
-<body>
-  <header class="container">
-    <div class="grid">
-      <a href="/" aria-label="Visit Brent Passmore's homepage">
-        <div role="group">
-          <img src="{{ '/assets/images/bpmore.avif' | relative_url }}" alt="Brent Passmore logo" width="150" height="150">
-          <div>
-            <h1>{{ site.title }}</h1>
-            <p>{{ site.description }}</p>
-          </div>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% seo title=false %}
+    {% include meta.html %}
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+    {% include analytics_head.html %}
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p> 
+            </div>
+
+            <nav>
+              <a href="{{ site.baseurl }}/">Home</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+              <a href="{{ site.baseurl }}/archive">Archive</a>
+              <a href="{{ site.baseurl }}/search">Search</a>
+            </nav>
+          </header>
         </div>
-      </a>
-      <nav aria-label="Primary navigation">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}role="button" class="outline" aria-current="page"{% endif %}>Home</a></li>
-          <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog' %}role="button" class="outline" aria-current="page"{% endif %}>Blog</a></li>
-          <li><a href="{{ '/categories' | relative_url }}" {% if page.url == '/categories' %}role="button" class="outline" aria-current="page"{% endif %}>Categories</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    {{ content }}
-  </main>
-  <footer class="container">
-    <section>
-      <h3>Socials</h3>
-      <div role="group" class="social-links">
-        {% if site.social.bluesky %}
-        <a href="{{ site.social.bluesky }}" target="_blank" rel="noopener noreferrer" title="Blue Sky" aria-label="Follow on Blue Sky" role="button" class="outline primary">Blue Sky</a>
-        {% endif %}
-        {% if site.social.facebook %}
-        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Follow on Facebook" role="button" class="outline primary">Facebook</a>
-        {% endif %}
-        {% if site.social.github %}
-        <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Visit GitHub profile" role="button" class="outline primary">GitHub</a>
-        {% endif %}
-        {% if site.social.x %}
-        <a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" title="X" aria-label="Follow on X" role="button" class="outline primary">X</a>
-        {% endif %}
       </div>
-      <p>© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
-    </section>
-  </footer>
-</body>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
 </html>
