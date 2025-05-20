@@ -24,7 +24,7 @@ footer-links:
   email: brentpassmore@gmail.com
   facebook:
   flickr:
-  github: bpmore/rev
+  github: bpmore
   instagram:
   linkedin: 
   pinterest:
@@ -55,7 +55,7 @@ enforce_ssl: https://brentpassmore.com
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
